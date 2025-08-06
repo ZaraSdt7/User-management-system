@@ -30,7 +30,7 @@ async function bootstrap()
     }),
   );
   app.enableCors({
-    origin: '*', // Adjust the origin as needed
+    origin: '*', 
   });
 
   const config = new DocumentBuilder()
