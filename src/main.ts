@@ -4,13 +4,15 @@ import helmet from 'helmet';
 import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { RateLimiterMemory } from 'rate-limiter-flexible';
+import { ResponseInterceptor } from './module/common/interceptors/response.interceptor';
+import { HttpExceptionFilter } from './module/common/filters/http-exeption.filter';
 
 async function bootstrap() 
 {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     origin: '*', // Adjust the origin as needed
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    methods: 'GET,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
   app.use(helmet());
@@ -32,7 +34,8 @@ async function bootstrap()
   app.enableCors({
     origin: '*', 
   });
-
+  app.useGlobalInterceptors(new ResponseInterceptor());
+app.useGlobalFilters(new HttpExceptionFilter());
   const config = new DocumentBuilder()
     .setTitle('User Management API')
     .setDescription('API documentation for the user system')
