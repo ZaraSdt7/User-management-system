@@ -1,5 +1,5 @@
 
-#User Management System with NestJS and MySQL
+# User Management System with NestJS and MySQL
 
 This project is a secure and modular user management system built with NestJS framework and MySQL database. It implements JWT-based authentication and role-based access control, ensuring a scalable and maintainable backend architecture.
 
