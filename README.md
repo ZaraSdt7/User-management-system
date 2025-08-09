@@ -27,17 +27,24 @@ This project is a secure and modular user management system built with NestJS fr
 
 # Installation and Setup
 
-1. Clone the repository:  
+1. **Clone the repository:**  
+
    ```bash
+
    git clone https://github.com/username/project-name.git
    cd project-name
+
 ````
+---
 
 2. Install dependencies:
 
    ```bash
+
    npm install
+
    ```
+---
 
 3. Create a `.env` file in the project root and configure environment variables:
 
@@ -58,13 +65,13 @@ This project is a secure and modular user management system built with NestJS fr
 
 5. Run the application in development mode:
 
-   ```bash
+   ```
    npm run start:dev
    ```
 
 ---
 
-## API Usage
+# API Usage
 
 * Default URL: `http://localhost:3000/`
 * Authentication uses JWT tokens.
@@ -72,9 +79,9 @@ This project is a secure and modular user management system built with NestJS fr
 
 ---
 
-## Project Structure
+# Project Structure
 
-```
+```bash
 src/
 ├── auth/                  # Authentication (JWT, services, controllers)
 ├── config/                # Configuration and environment management
@@ -85,7 +92,7 @@ src/
 
 ---
 
-## Security Notes
+# Security Notes
 
 * Passwords should be hashed (e.g., with bcrypt) before saving to database (to be implemented)
 * Keep `JWT_SECRET` confidential and only in environment variables
@@ -94,7 +101,7 @@ src/
 
 ---
 
-## Development and Contribution
+# Development and Contribution
 
 * Follow NestJS and TypeScript best practices
 * Use linting and formatting tools for clean code
@@ -102,7 +109,7 @@ src/
 
 ---
 
-## Resources and Documentation
+# Resources and Documentation
 
 * [NestJS Official Docs](https://docs.nestjs.com)
 * [Sequelize ORM Docs](https://sequelize.org/master/)
@@ -111,10 +118,9 @@ src/
 
 ---
 
-## Questions or Issues?
+# Questions or Issues?
 
 Feel free to open an issue or contact me for any help or guidance!
 Happy coding! 🚀✨
 
-```
 
