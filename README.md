@@ -27,14 +27,15 @@ This project is a secure and modular user management system built with NestJS fr
 
 # Installation and Setup
 
-1. **Clone the repository:**  
+1.Clone the repository:  
 
    ```bash
 
    git clone https://github.com/username/project-name.git
    cd project-name
   ````
----
+
+
 
 # Install dependencies
 
