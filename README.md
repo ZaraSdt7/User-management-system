@@ -34,7 +34,11 @@ This project is a secure and modular user management system built with NestJS fr
    git clone https://github.com/username/project-name.git
    cd project-name
   ````
-# Install dependencies:
+
+
+# Install dependencies
+
+1. **Install:**
 
 ```bash
 npm install
@@ -42,25 +46,39 @@ npm install
 
 # Create a .env file in the project root and configure environment variables:
 
+2. **Create a .env file**
+
 ```bash
+
 DB_HOST=localhost
 DB_PORT=3306
 DB_USERNAME=root
 DB_PASSWORD=your_password
 DB_NAME=user_managementDB
 JWT_SECRET=your_jwt_secret
+
 ```
 
 # Create the MySQL database:
 
+3. **MySQL database:**
+
 ```bash
+
 CREATE DATABASE user_managementDB;
+
 ```
 
 # Run the application in development mode:
+
+4. **Run the application:**
+
 ```bash
+
 npm run start:dev
+
 ```
+---
 
 # API Usage
 
