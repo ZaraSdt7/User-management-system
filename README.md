@@ -1,11 +1,11 @@
-````markdown
-# User Management System with NestJS and MySQL
+
+#User Management System with NestJS and MySQL
 
 This project is a secure and modular user management system built with NestJS framework and MySQL database. It implements JWT-based authentication and role-based access control, ensuring a scalable and maintainable backend architecture.
 
 ---
 
-## Features
+#Features
 
 - Complete JWT authentication implementation  
 - Role-Based Access Control (RBAC)  
@@ -17,7 +17,7 @@ This project is a secure and modular user management system built with NestJS fr
 
 ---
 
-## Prerequisites
+#Prerequisites
 
 - Node.js (Recommended version 16 or above)  
 - MySQL (Version 5.7 or higher)  
@@ -25,7 +25,7 @@ This project is a secure and modular user management system built with NestJS fr
 
 ---
 
-## Installation and Setup
+#Installation and Setup
 
 1. Clone the repository:  
    ```bash
@@ -117,4 +117,4 @@ Feel free to open an issue or contact me for any help or guidance!
 Happy coding! 🚀✨
 
 ```
-```
+
