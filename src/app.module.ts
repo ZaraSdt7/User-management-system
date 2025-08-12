@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { databaseConfig } from './module/config/database.config';
 import { User } from './module/user/model/user.model';
 import { AuthModule } from './module/auth/auth.module';
 import { UsersModule } from './module/user/user.module';

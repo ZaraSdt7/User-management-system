@@ -24,13 +24,20 @@ async function bootstrap()
     }),
   );
 
-  app.use(
-    new RateLimiterMemory({
-      points: 100, // limit each IP to 100 requests
-      duration: 15 * 60, // per 15 minutes
-      blockDuration: 60 * 15, // Block for 15 minutes
-    }),
-  );
+  const rateLimiter = new RateLimiterMemory({
+    points: 100,
+    duration: 15 * 60,
+    blockDuration: 60 * 15,
+  });
+    app.use((req, res, next) => {
+    rateLimiter.consume(req.ip)
+      .then(() => {
+        next();
+      })
+      .catch(() => {
+        res.status(429).send('Too Many Requests');
+      });
+  });
   app.enableCors({
     origin: '*', 
   });
